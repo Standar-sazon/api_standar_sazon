@@ -26,7 +26,6 @@ jobs:
       uses: actions/checkout@v2 
 
     # Authenticate with IBM Cloud CLI
-    steps:
     - name: Authenticate with IBM Cloud CLI
       run: |
         ibmcloud login --apikey "${IBM_CLOUD_API_KEY}" -r "${IBM_CLOUD_REGION}" -g default
