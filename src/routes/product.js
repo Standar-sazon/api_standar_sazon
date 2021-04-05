@@ -3,6 +3,7 @@ const products = require('../usecases/product')
 // const authMiddleware = require('../middlewares/auth-middleware')
 
 const router = express.Router()
+// router.use(authMiddleware)//
 // router.use(authMiddleware)
 
 router.get('/', async (request, response) => {

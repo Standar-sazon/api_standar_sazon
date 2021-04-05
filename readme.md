@@ -13,3 +13,7 @@
 The standardization and costing of recipes is a process that allows obtaining the real value of the dishes before and after taxes for their subsequent sale, as well as creating a standard for the use of raw materials and assembly of dishes within the kitchen.
 
 Standar & sazón seeks to facilitate the recipe creation process, reduce preparation time, and speed up the collection of essential data such as prices, product performance, expenses, among others.
+
+
+1.- Git push y git pull para actualizar el código
+2.- Ibmcloud cf push para actualizar la nube.
