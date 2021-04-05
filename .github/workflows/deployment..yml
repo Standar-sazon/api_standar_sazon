@@ -6,7 +6,7 @@
 # 2. Setup secrets in your repository by going to settings: Create ICR_NAMESPACE and IBM_CLOUD_API_KEY
 # 3. Change the values for the IBM_CLOUD_REGION, REGISTRY_HOSTNAME, IMAGE_NAME, IKS_CLUSTER, DEPLOYMENT_NAME, and PORT
 
-name: Build and Deploy
+name: Deploy to ibm cloud foundry
 
 on:
   release:
@@ -34,7 +34,7 @@ jobs:
         curl -fsSL https://clis.cloud.ibm.com/install/linux | sh
         ibmcloud --version
         ibmcloud config --check-version=false
-        ibmcloud plugin install -f cloud Foundry-service
+        ibmcloud plugin install -f cloud foundry-service
 
     # Authenticate with IBM Cloud CLI
     - name: Authenticate with IBM Cloud CLI
