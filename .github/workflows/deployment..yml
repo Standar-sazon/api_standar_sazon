@@ -26,14 +26,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    # Download and Install IBM Cloud CLI
-    - name: Install IBM Cloud 
-      run: |
-        curl -fsSL https://clis.cloud.ibm.com/install/linux | sh
-        ibmcloud --version
-        ibmcloud config --check-version=false
-        ibmcloud plugin install -f cloud foundry-service
-
     # Authenticate with IBM Cloud CLI
     - name: Authenticate with IBM Cloud CLI
       run: |
