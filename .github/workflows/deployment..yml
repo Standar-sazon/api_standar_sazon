@@ -8,10 +8,8 @@
 
 name: Deploy to ibm cloud foundry
 
-on:
-  release:
-    types: [created]
-
+on: push
+  
 # Environment variables available to all jobs and steps in this workflow
 env:
   GITHUB_SHA: ${{ github.sha }}
